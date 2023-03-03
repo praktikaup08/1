@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre id="response"></pre>
+<script>
+    const get_order = async function (order_code) {
+        let url = `http://tickets.сделай.site/api/order/${order_code}`;
+        let response = await fetch(url);
+        return await response.json();
+    }
+
+    const start = async function () {
+        let data = await get_order('O86VAWZKUP');
+        document.getElementById("response").innerHTML = JSON.stringify(data, null, 4);
+    }
+    start();
+</script>
+</body>
+</html>

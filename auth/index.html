@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо Bootstrap</title>
+    <link href="css\bootstrap.min.css" rel="stylesheet" >
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Навбар</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Выпадающий список
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Действие</a></li>
+                  <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Отключенная</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+<!-- Кнопка-триггер модального окна -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Войти
+</button>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Вход</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-3">
+            <label class="visually-hidden" for="autoSizingInputGroup">Логин</label>
+            <div class="input-group">
+            <div class="input-group-text">	
+              &#128100;</div>
+            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Имя пользователя">
+      </div>
+          </div>
+          <div class="row mb-3">
+            <label class="visually-hidden" for="autoSizingInputGroup">Пароль</label>
+            <div class="input-group">
+            <div class="input-group-text">	
+              &#128274;</div>
+            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Пароль">
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Запомнить меня
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col-sm-10 offset-sm-4">
+            <button type="button" class="btn btn-primary">Войти</button>
+          </div>
+          </div>
+          <fieldset class="row mb-1">
+            <div class="row mb-1">
+              <div class="col-sm-10 offset-sm-4">
+              <a href="#" class="link-primary">Регистрация</a>
+            </div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-sm-10 offset-sm-4">
+              <a href="#" class="link-primary">Забыли логин?</a>
+            </div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-sm-10 offset-sm-4">
+              <a href="#" class="link-primary">Забыли пароль?</a>
+            </div>
+            </div>
+          </fieldset>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js\bootstrap.bundle.js"></script>
+  </body>
+</html>
